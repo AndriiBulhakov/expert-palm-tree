@@ -97,14 +97,14 @@ const Hero = () => {
             className="absolute top-[1.38rem] right-[1.38rem] z-10"
           />
           <div className="absolute z-[-1] w-[270.259%] h-[250.8%] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] flex items-center justify-center blur">
-            <Image
+            <img
               src="/assets/images/hero-video-bg-2.webp"
               alt="Hero"
               className="hero-star w-[66.507%] absolute h-[66.507%] object-contain"
               width={627}
               height={627}
             />
-            <Image
+            <img
               src="/assets/images/hero-video-bg-1.webp"
               alt="Hero"
               className="hero-star w-full h-full object-contain"
