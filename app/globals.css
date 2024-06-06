@@ -336,7 +336,7 @@ a:not(.btn):not(.product-hunt-badge):not(.without-underline):hover {
 
 /* Video description */
 
-.video-description:first-child {
+/* .video-description:first-child {
   animation: video-description 10s infinite;
   animation-timing-function: --03;
 }
@@ -345,9 +345,9 @@ a:not(.btn):not(.product-hunt-badge):not(.without-underline):hover {
   animation: video-description 10s infinite;
   animation-timing-function: --03;
   animation-delay: 6s;
-}
+} */
 
-@keyframes video-description {
+/* @keyframes video-description {
   0% {
     filter: blur(0px);
   }
@@ -363,7 +363,7 @@ a:not(.btn):not(.product-hunt-badge):not(.without-underline):hover {
   100% {
     filter: blur(0px);
   }
-}
+} */
 
 /* Hero Star */
 
