@@ -37,7 +37,7 @@ const Hero = () => {
               width={417}
               height={417}
             />
-          </div> */}
+          </div> video optimized*/}
           <Video
             className="w-full h-full object-cover rounded-[1.88rem]"
             src="/assets/video/Hero-1.mp4"
