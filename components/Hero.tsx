@@ -41,10 +41,12 @@ const Hero = () => {
           <Video
             className="w-full h-full object-cover rounded-[1.88rem]"
             src="/assets/video/Hero-1.mp4"
+            poster="/assets/images/video-posters/6.webp"
           />
           <Video
             className="small-video w-full h-full object-cover absolute inset-x-0 inset-y-0 rounded-[1.88rem]"
             src="/assets/video/Hero-2.mp4"
+            poster="/assets/images/video-posters/7.webp"
           />
         </div>
         <div className="video-description md:flex flex-col gap-2 xs:hidden mt-[1.56rem] right-[-3.38rem] absolute translate-x-[100%] tracking-[-0.015rem] max-w-[11.0625rem] text-gray-primary">
