@@ -174,7 +174,7 @@ a:not(.btn):not(.product-hunt-badge):not(.without-underline):hover {
   z-index: 2;
 }
 
-/* .bubble {
+.bubble {
   position: absolute;
 }
 
@@ -206,7 +206,7 @@ a:not(.btn):not(.product-hunt-badge):not(.without-underline):hover {
   transform: rotate(-56.943deg);
   top: 30%;
   right: -10.295%;
-} */
+}
 
 /* animation to moving bubbles */
 
