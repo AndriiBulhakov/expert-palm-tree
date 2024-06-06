@@ -68,7 +68,7 @@ const TabContent: React.FC<TabContentProps> = ({ tabs, activeTab }) => {
       ".interviewer, .copilot"
     )
 
-    // const text = new SplitType([copilotItems], { types: "words" })
+    const text = new SplitType([copilotItems], { types: "words" })
 
     gsap.set([interviewerItems, youItems], {
       autoAlpha: 0,
@@ -80,10 +80,10 @@ const TabContent: React.FC<TabContentProps> = ({ tabs, activeTab }) => {
       display: "none",
     })
 
-    // gsap.set(text.words, {
-    //   autoAlpha: 0,
-    //   display: "none",
-    // })
+    gsap.set(text.words, {
+      autoAlpha: 0,
+      display: "none",
+    })
 
     gsap.set(mobileBlocks, {
       x: 0,
@@ -100,23 +100,43 @@ const TabContent: React.FC<TabContentProps> = ({ tabs, activeTab }) => {
           delay: 0.5,
         })
         .to(mobileBlocks, { x: "-100%", delay: 1 }, "-=0.2")
-        .to(copilotListItems, {
+        .to(text.words, {
           autoAlpha: 1,
-          display: "block",
-          duration: 0.1,
-          delay: 0.1,
-          stagger: 0.3,
+          display: "inline-block",
+          ease: SteppedEase.config(10),
+          duration: 0.3,
+          delay: 0.5,
+          stagger: { amount: 1 },
+          onStart: () => {
+            gsap.to(copilotListItems, {
+              autoAlpha: 1,
+              display: "block",
+              duration: 0.1,
+              delay: 0.1,
+              stagger: 0.3,
+            })
+          },
         })
     } else {
       timeline
         .to(interviewerItems, { autoAlpha: 1, y: 0, stagger: 0.3, delay: 0.5 })
         .to(youItems, { autoAlpha: 1, y: 0, stagger: 0.3 }, "-=0.2")
-        .to(copilotListItems, {
+        .to(text.words, {
           autoAlpha: 1,
-          display: "block",
-          duration: 0.1,
-          delay: 0.1,
-          stagger: 0.3,
+          display: "inline-block",
+          ease: SteppedEase.config(10),
+          duration: 0.3,
+          delay: 0.7,
+          stagger: { amount: 1 },
+          onStart: () => {
+            gsap.to(copilotListItems, {
+              autoAlpha: 1,
+              display: "block",
+              duration: 0.1,
+              delay: 0.1,
+              stagger: 0.3,
+            })
+          },
         })
     }
 
