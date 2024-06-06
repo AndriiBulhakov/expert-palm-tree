@@ -30,15 +30,15 @@ const CookieConsentBanner = () => {
   }
 
   return (
-    <div className="fixed z-20 sm:bottom-5 sm:right-5 sm:left-auto xs:bottom-4 xs:right-4 xs:left-4 sm:max-w-[33.625rem] sm:w-full sm:p-8 xs:p-6 rounded-[2rem] overflow-hidden">
-      <Image
+    <div className="fixed z-20 sm:bottom-5 sm:right-5 sm:left-auto xs:bottom-4 xs:right-4 xs:left-4 sm:max-w-[33.625rem] sm:w-full sm:p-8 xs:p-6 rounded-[2rem] overflow-hidden bg-red-primary">
+      {/* <Image
         src="/assets/images/mentions-bg.webp"
         alt="CTA Background"
         loading="lazy"
         className="absolute z-[-1] top-0 right-0 left-0 bottom-0 min-w-[100%] min-h-[100%] object-cover max-w-none"
         width={1083}
         height={718}
-      />
+      /> */}
       <button
         className="absolute sm:top-9 sm:right-9 xs:right-6 xs:top-6"
         onClick={handleReject}
