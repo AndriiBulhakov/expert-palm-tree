@@ -22,22 +22,22 @@ const Hero = () => {
             color="bg-white-background"
             className="absolute top-[1.38rem] right-[1.38rem] z-10"
           />
-          {/* <div className="absolute z-[-1] w-[270.259%] h-[250.8%] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] flex items-center justify-center blur">
+          <div className="absolute z-[-1] w-[270.259%] h-[250.8%] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] flex items-center justify-center blur">
             <img
-              src="/assets/images/hero-video-bg-2.webp"
+              src="/assets/images/star-small.svg"
               alt="Hero"
               className="hero-star w-[66.507%] absolute h-[66.507%] object-contain"
               width={627}
               height={627}
             />
             <img
-              src="/assets/images/hero-video-bg-1.webp"
+              src="/assets/images/star-big.svg"
               alt="Hero"
               className="hero-star w-full h-full object-contain"
               width={417}
               height={417}
             />
-          </div> video optimized*/}
+          </div>
           <Video
             className="w-full h-full object-cover rounded-[1.88rem]"
             src="/assets/video/Hero-1.mp4"
