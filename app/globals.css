@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: Albra;
-  src: url("/fonts/Albra-Regular.otf") format("opentype");
+  src: url("/fonts/albra-regular-webfont.woff2") format("opentype");
 }
 
 :root {
