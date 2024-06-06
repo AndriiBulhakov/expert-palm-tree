@@ -22,7 +22,6 @@ import Preloader from "@/components/ui/Preloader"
 export default function Home() {
   return (
     <>
-      <Preloader />
       <main>
         <BackgroundBubbles position="fixed" className="z-[-1]" />
         <Navbar />
