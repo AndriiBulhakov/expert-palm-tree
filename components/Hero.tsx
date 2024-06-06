@@ -23,7 +23,7 @@ const Hero = () => {
             className="absolute top-[1.38rem] right-[1.38rem] z-10"
           />
           <div className="absolute z-[-1] w-[270.259%] h-[250.8%] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] flex items-center justify-center blur">
-            <img
+            {/* <img
               src="/assets/images/star-small.svg"
               alt="Hero"
               className="hero-star w-[66.507%] absolute h-[66.507%] object-contain"
@@ -36,7 +36,7 @@ const Hero = () => {
               className="hero-star w-full h-full object-contain"
               width={417}
               height={417}
-            />
+            /> */}
           </div>
           <Video
             className="w-full h-full object-cover rounded-[1.88rem]"
